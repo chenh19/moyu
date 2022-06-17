@@ -1,5 +1,5 @@
 # Moyu (摸鱼)
-*v0.0.1*
+*v0.0.1* (only has been tested on [Kubuntu](https://kubuntu.org/))
 
 ## How to use
 - Connect to internet and execute the below command in terminal:
