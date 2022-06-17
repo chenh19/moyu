@@ -2,11 +2,11 @@
 *v0.1.0*
 
 ## How to use
-- Connect to internet and execute the below command in terminal:
+- Connect to internet and execute the below command in terminal (for linux):
 ```
 bash <(wget -qO- https://raw.githubusercontent.com/chenh19/moyu/main/linux_moyu.sh)
 ```
-
+- Connect to internet and execute the below command in terminal (for mac os):
 ```
 bash -c "$(curl -fsSL https://raw.githubusercontent.com/chenh19/moyu/main/mac_moyu.sh)"
 ```
