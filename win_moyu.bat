@@ -21,9 +21,10 @@ echo.
 :loop2
    echo %ESC%[33mPlease specify a time duration to moyu (minutes): %ESC%[0m
    set /p runningmin=""
-   echo %runningmin%| findstr /r "^[1-9][0-9]*$">nul
+   echo %runningmin% | findstr /r "^[1-9][0-9]*$">nul
 if errorlevel 1 goto loop2
 echo.
+
 
 @REM run
 echo %ESC%[33mProceeding to the next step... %ESC%[0m
