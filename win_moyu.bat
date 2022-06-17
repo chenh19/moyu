@@ -21,6 +21,11 @@ echo.
 @REM run
 echo %ESC%[33mTest%ESC%[0m
 echo.
+
+for /f "tokens=*" %%s in (%HOMEPATH%\.moyu.txt) do (
+  echo %%s && call :waitfor 300>nul
+)
+
 echo %ESC%[32mTest%ESC%[0m
 echo.
 
