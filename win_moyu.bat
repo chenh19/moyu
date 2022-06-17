@@ -43,3 +43,5 @@ echo.
 echo %ESC%[32mAll done! %ESC%[0m
 CSCRIPT %HOMEPATH%\SLEEP.VBS 300 //Nologo
 echo.
+del /f %HOMEPATH%\win_moyu.bat
+del /f %HOMEPATH%\SLEEP.VBS
