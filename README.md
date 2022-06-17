@@ -1,5 +1,5 @@
 # Moyu (摸鱼)
-**A comprehensive cross-platform moyu tool**  
+**A comprehensive cross-platform moyu tool.**  
 *Current version: v0.2.0*
 
 ## How to use
