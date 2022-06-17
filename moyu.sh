@@ -19,7 +19,6 @@ until [[ $runningmin == +([0-9]) ]] ; do
     read -r -p "$(echo -e $TEXT_YELLOW'Please specify a time duration to moyu (minutes): '$TEXT_RESET)"$' \n' runningmin
 done
 endtime=$(( $(date +%M) + $runningmin ))
-
 while [ $(date +%M) -lt $endtime ]; do
     echo -e " \n${TEXT_YELLOW}Proceeding to the next step... ${TEXT_RESET}"$' \n' && sleep 3
     while read line; do echo $line && sleep 0.05; done < ~/.moyu.txt
