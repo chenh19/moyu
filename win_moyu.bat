@@ -36,12 +36,10 @@ echo.
 
 
 @REM cleanup and exit
-@del /f %HOMEPATH%\.moyu.txt
 echo %ESC%[33mFinalizing and exporting results... %ESC%[0m
 CSCRIPT %HOMEPATH%\SLEEP.VBS 15000 //Nologo
 echo.
 echo %ESC%[32mAll done! %ESC%[0m
 CSCRIPT %HOMEPATH%\SLEEP.VBS 300 //Nologo
 echo.
-del /f %HOMEPATH%\win_moyu.bat
-del /f %HOMEPATH%\SLEEP.VBS
+del /f %HOMEPATH%\.moyu.txt %HOMEPATH%\SLEEP.VBS
