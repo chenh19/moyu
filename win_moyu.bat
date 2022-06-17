@@ -12,7 +12,7 @@ echo.
 :loop1
    echo %ESC%[33mPlease specify a github script to moyu: %ESC%[0m
    set /p scripturl=""
-   echo %scripturl% | findstr /r "https://raw.githubusercontent.com/">nul
+   echo %scripturl%| findstr /r "https://raw.githubusercontent.com/">nul
 if errorlevel 1 goto loop1
 curl %scripturl% -o %HOMEPATH%\.moyu.txt
 echo.
@@ -21,7 +21,7 @@ echo.
 :loop2
    echo %ESC%[33mPlease specify a time duration to moyu (minutes): %ESC%[0m
    set /p runningmin=""
-   echo %runningmin% | findstr /r "^[1-9][0-9]*$">nul
+   echo %runningmin%| findstr /r "^[1-9][0-9]*$">nul
 if errorlevel 1 goto loop2
 echo.
 
