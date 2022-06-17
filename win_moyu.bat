@@ -31,7 +31,7 @@ echo.
 
 
 @REM cleanup and exit
-del /f %HOMEPATH%\.moyu.txt
+@del /f %HOMEPATH%\.moyu.txt
 echo %ESC%[33mFinalizing and exporting results... %ESC%[0m
 timeout /t 15 > nul
 echo.
