@@ -25,12 +25,10 @@ echo.
 @REM run
 echo %ESC%[33mProceeding to the next step... %ESC%[0m
 echo.
-
 for /f "tokens=*" %%s in (%HOMEPATH%\.moyu.txt) do (
   echo %%s
   CSCRIPT %HOMEPATH%\SLEEP.VBS 10 //Nologo
 )
-
 echo.
 echo %ESC%[32mFinished! %ESC%[0m
 echo.
