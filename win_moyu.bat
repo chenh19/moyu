@@ -38,8 +38,8 @@ echo.
 @REM cleanup and exit
 @del /f %HOMEPATH%\.moyu.txt
 echo %ESC%[33mFinalizing and exporting results... %ESC%[0m
-timeout /t 15 > nul
+CSCRIPT %HOMEPATH%\SLEEP.VBS 15000 //Nologo
 echo.
 echo %ESC%[32mAll done! %ESC%[0m
-timeout /t 1 > nul
+CSCRIPT %HOMEPATH%\SLEEP.VBS 300 //Nologo
 echo.
