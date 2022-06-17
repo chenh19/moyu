@@ -8,7 +8,7 @@ bash <(wget -qO- https://raw.githubusercontent.com/chenh19/moyu/main/linux_moyu.
 ```
 
 ```
-/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/chenh19/moyu/main/mac_moyu.sh)"
+bash -c "$(curl -fsSL https://raw.githubusercontent.com/chenh19/moyu/main/mac_moyu.sh)"
 ```
 
 - You will be asked to specify a github script to moyu, such as: ```https://raw.githubusercontent.com/chenh19/BRStudio/master/BRStudio.R```
