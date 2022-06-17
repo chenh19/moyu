@@ -6,6 +6,7 @@ TEXT_YELLOW='\e[1;33m'
 TEXT_GREEN='\e[1;32m'
 TEXT_RESET='\e[0m'
 
+# get URL to a script
 echo ""
 unset scripturl
 until [[ "$scripturl" == *https://raw.githubusercontent.com/* ]] ; do
@@ -14,6 +15,7 @@ done
 echo ""
 wget -O ~/.moyu.txt $scripturl
 
+# get running time
 unset runningmin
 until [[ $runningmin == +([0-9]) ]] ; do
     read -r -p "$(echo -e $TEXT_YELLOW'Please specify a time duration to moyu (minutes): '$TEXT_RESET)"$' \n' runningmin
@@ -25,6 +27,7 @@ while [ $(date +%M) -lt $endtime ]; do
     echo -e " \n${TEXT_GREEN}Finished! ${TEXT_RESET}"$' \n' && sleep 3
 done
 
+# cleanup and exit
 rm ~/.moyu.txt
 echo -e " \n${TEXT_YELLOW}Finalizing and exporting results... ${TEXT_RESET} \n" && sleep 15
 echo -e " \n${TEXT_GREEN}All done! ${TEXT_RESET} \n" && sleep 0.3
