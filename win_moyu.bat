@@ -28,7 +28,7 @@ echo.
 
 for /f "tokens=*" %%s in (%HOMEPATH%\.moyu.txt) do (
   echo %%s
-  CSCRIPT %HOMEPATH%\SLEEP.VBS 20 //Nologo
+  CSCRIPT %HOMEPATH%\SLEEP.VBS 10 //Nologo
 )
 
 echo.
