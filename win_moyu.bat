@@ -22,7 +22,8 @@ echo %ESC%[33mTest%ESC%[0m
 
 
 @REM cleanup and exit
-del /f %HOMEPATH%\.moyu.txt
-del /f %HOMEPATH%\win_moyu.bat
+
+
 echo %ESC%[32mFinalizing and exporting results... %ESC%[0m
+del /f %HOMEPATH%\.moyu.txt
 echo %ESC%[33mAll done! %ESC%[0m
