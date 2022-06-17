@@ -14,3 +14,5 @@ bash <(wget -qO- https://raw.githubusercontent.com/chenh19/moyu/main/moyu.sh)
 <p align="center">
   <img src="https://raw.githubusercontent.com/chenh19/moyu/main/moyu.png" width=85%>
 </p>
+
+- If you would like to stop immediately, simply press ```Ctrl+C```.
