@@ -7,6 +7,7 @@ TEXT_GREEN='\e[1;32m'
 TEXT_RESET='\e[0m'
 
 unset scripturl
+echo ""
 read -p "$(echo -e $TEXT_YELLOW'Please specify an online script to moyu: '$TEXT_RESET)"$' \n' scripturl
 echo $scripturl
 wget -O ~/.moyu.txt $scripturl
