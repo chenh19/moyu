@@ -28,6 +28,6 @@ done
 
 rm ~/.moyu.txt
 
-echo -e " \n${TEXT_GREEN}Finalizing and exporting results... ${TEXT_RESET} \n" && sleep 15
+echo -e " \n${TEXT_YELLOW}Finalizing and exporting results... ${TEXT_RESET} \n" && sleep 15
 
-echo -e " \n${TEXT_GREEN}All done! ${TEXT_RESET} \n" && sleep 5
+echo -e " \n${TEXT_GREEN}All done! ${TEXT_RESET} \n" && sleep 0.3
