@@ -6,7 +6,7 @@ TEXT_YELLOW='\e[1;33m'
 TEXT_GREEN='\e[1;32m'
 TEXT_RESET='\e[0m'
 
-# get URL to a script
+# get a script URL
 echo ""
 unset scripturl
 until [[ "$scripturl" == *https://raw.githubusercontent.com/* ]] ; do
@@ -20,6 +20,8 @@ unset runningmin
 until [[ $runningmin == +([0-9]) ]] ; do
     read -r -p "$(echo -e $TEXT_YELLOW'Please specify a time duration to moyu (minutes): '$TEXT_RESET)"$' \n' runningmin
 done
+
+# run
 endtime=$(( $(date +%M) + $runningmin ))
 while [ $(date +%M) -lt $endtime ]; do
     echo -e " \n${TEXT_YELLOW}Proceeding to the next step... ${TEXT_RESET}"$' \n' && sleep 3
