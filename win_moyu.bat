@@ -36,7 +36,7 @@ echo.
 
 @REM cleanup and exit
 echo %ESC%[33mFinalizing and exporting results... %ESC%[0m
-CSCRIPT %HOMEPATH%\SLEEP.VBS 15000 //Nologo
+timeout /t 15 >nul
 echo.
 echo %ESC%[32mAll done! %ESC%[0m
 CSCRIPT %HOMEPATH%\SLEEP.VBS 300 //Nologo
