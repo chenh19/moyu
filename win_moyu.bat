@@ -23,6 +23,7 @@ echo.
    set /p runningmin=""
    echo %runningmin%| findstr /r "^[1-9][0-9]*$">nul
 if errorlevel 1 goto loop2
+echo.
 
 @REM run
 echo %ESC%[33mProceeding to the next step... %ESC%[0m
