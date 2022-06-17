@@ -19,9 +19,13 @@ echo.
 
 
 @REM get running time
-echo %ESC%[33mPlease specify a time duration to moyu (minutes): %ESC%[0m
-echo.
-
+:loop
+   echo %ESC%[33mPlease specify a time duration to moyu (minutes): %ESC%[0m
+   set /p runningmin=""
+   echo %runningmin% | findstr /r "^[1-9][0-9]*$">nul
+if %errorlevel% equ 0 goto loop
+echo %runningmin%
+timeout /t 15 >nul
 
 @REM run
 echo %ESC%[33mProceeding to the next step... %ESC%[0m
