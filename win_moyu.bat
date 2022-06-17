@@ -9,10 +9,11 @@ for /F %%a in ('echo prompt $E ^| cmd') do set "ESC=%%a"
 echo.
 
 @REM get a script URL
-echo %ESC%[33mPlease specify a github script to moyu: %ESC%[0m
-echo.
-
-set scripturl=https://raw.githubusercontent.com/chenh19/BRStudio/master/BRStudio.R
+:loop
+   echo %ESC%[33mPlease specify a github script to moyu: %ESC%[0m
+   set /p scripturl=""
+   echo %scripturl% | findstr /r "https://raw.githubusercontent.com/">nul
+if errorlevel 1 goto loop
 curl %scripturl% -o %HOMEPATH%\.moyu.txt
 echo.
 
