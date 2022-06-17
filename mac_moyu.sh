@@ -14,6 +14,7 @@ until [[ "$scripturl" == *https://raw.githubusercontent.com/* ]] ; do
 done
 echo ""
 curl $scripturl -o ~/.moyu.txt
+echo ""
 
 # get running time
 unset runningmin
