@@ -28,4 +28,4 @@ echo.
 timeout /t 15
 echo %ESC%[33mAll done! %ESC%[0m
 echo.
-timeout /t 0.3
+timeout /t 1
