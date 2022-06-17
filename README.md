@@ -2,7 +2,7 @@
 *v0.1.0*
 
 ## How to use
-- **For Linux:** connect to internet and execute the below command in terminal:
+- **For Linux:** connect to internet and execute the below command in Terminal:
 ```
 bash <(wget -qO- https://raw.githubusercontent.com/chenh19/moyu/main/linux_moyu.sh)
 ```
@@ -10,13 +10,18 @@ bash <(wget -qO- https://raw.githubusercontent.com/chenh19/moyu/main/linux_moyu.
   <img src="https://raw.githubusercontent.com/chenh19/moyu/main/images/linux_moyu.png" width=85%>
 </p>
 
-- **For MacOS:** connect to internet and execute the below command in terminal:
+- **For MacOS:** connect to internet and execute the below command in Terminal:
 ```
 bash -c "$(curl -fsSL https://raw.githubusercontent.com/chenh19/moyu/main/mac_moyu.sh)"
 ```
 <p align="center">
   <img src="https://raw.githubusercontent.com/chenh19/moyu/main/images/mac_moyu.png" width=85%>
 </p>
+
+- **For Windows:** connect to internet and execute the below command in Command Prompt:
+```
+curl -fsSL https://raw.githubusercontent.com/chenh19/moyu/main/win_moyu.bat -o %HOMEPATH%\win_moyu.bat && %HOMEPATH%\win_moyu.bat 
+```
 
 ### Note:
 
