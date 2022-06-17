@@ -2,7 +2,7 @@
 
 @REM set cmd font color
 for /F %%a in ('echo prompt $E ^| cmd') do set "ESC=%%a"
-
+echo.
 
 @REM get a script URL
 echo %ESC%[33mPlease specify a github script to moyu: %ESC%[0m
