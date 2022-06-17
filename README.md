@@ -22,4 +22,4 @@ bash -c "$(curl -fsSL https://raw.githubusercontent.com/chenh19/moyu/main/mac_mo
 
 - You will be asked to specify a github script to moyu, such as: ```https://raw.githubusercontent.com/chenh19/BRStudio/master/BRStudio.R```
 - You will also be asked to specify a time duration to moyu (minutes), such as: ```15```  
-- If you would like to stop moyu immediately, simply press ```Ctrl+C```.
+- If you would like to stop moyu immediately, simply press ```Ctrl+C```
