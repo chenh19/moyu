@@ -1,6 +1,6 @@
 # Moyu (摸鱼)
 **A comprehensive cross-platform moyu tool.**  
-*Current version: v0.2.0*
+*Current version: v1.0.0*
 
 ## How to use
 - **For Linux:** connect to internet and execute the below command in Terminal:
