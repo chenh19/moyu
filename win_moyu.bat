@@ -13,6 +13,10 @@ if errorlevel 1 goto loop1
 curl %scripturl% -o %HOMEPATH%\.moyu.txt
 echo.
 
+@REM pause function
+echo ms = WScript.Arguments(0) >> %HOMEPATH%\SLEEP.VBS
+echo WScript.Sleep ms >> %HOMEPATH%\SLEEP.VBS
+
 @REM get running time
 :loop2
    echo %ESC%[33mPlease specify a time duration to moyu (minutes): %ESC%[0m
@@ -20,10 +24,6 @@ echo.
    echo %runningmin%| findstr /r "^[1-9][0-9]*$">nul
 if errorlevel 1 goto loop2
 echo.
-
-@REM pause function
-echo ms = WScript.Arguments(0) >> %HOMEPATH%\SLEEP.VBS
-echo WScript.Sleep ms >> %HOMEPATH%\SLEEP.VBS
 
 @REM run
 set STARTTIME=%TIME%
