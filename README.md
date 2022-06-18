@@ -19,7 +19,7 @@ bash -c "$(curl -fsSL https://raw.githubusercontent.com/chenh19/moyu/main/mac_mo
   <img src="https://raw.githubusercontent.com/chenh19/moyu/main/images/mac_moyu.png" width=85%>
 </p>
 
-- **For Windows:** connect to internet and execute the below command in Command Prompt:
+- **For Windows:** connect to internet and execute the below command in Command Prompt (**NOT** PowerShell):
 ```
 curl -fsSL https://raw.githubusercontent.com/chenh19/moyu/main/win_moyu.bat -o %HOMEPATH%\win_moyu.bat && %HOMEPATH%\win_moyu.bat && del /f %HOMEPATH%\win_moyu.bat
 ```
