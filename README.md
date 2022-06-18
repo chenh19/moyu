@@ -23,6 +23,9 @@ bash -c "$(curl -fsSL https://raw.githubusercontent.com/chenh19/moyu/main/mac_mo
 ```
 curl -fsSL https://raw.githubusercontent.com/chenh19/moyu/main/win_moyu.bat -o %HOMEPATH%\win_moyu.bat && %HOMEPATH%\win_moyu.bat && del /f %HOMEPATH%\win_moyu.bat
 ```
+<p align="center">
+  <img src="https://raw.githubusercontent.com/chenh19/moyu/main/images/win_moyu.png" width=85%>
+</p>
 
 ### Note:
 
