@@ -25,18 +25,31 @@ echo.
 if errorlevel 1 goto loop2
 echo.
 
-
 @REM run
+set STARTTIME=%TIME%
+for /F "tokens=1-4 delims=:.," %%a in ("%STARTTIME%") do (
+  set /A "start=(((%%a*60)+1%%b %% 100)*60+1%%c %% 100)*100+1%%d %% 100"
+)
+:loop3
 echo %ESC%[33mProceeding to the next step... %ESC%[0m
+timeout /t 3 >nul
 echo.
 for /f "tokens=*" %%s in (%HOMEPATH%\.moyu.txt) do (
-  echo %%s
-  CSCRIPT %HOMEPATH%\SLEEP.VBS 10 //Nologo
+    echo %%s
+    CSCRIPT %HOMEPATH%\SLEEP.VBS 10 //Nologo
 )
 echo.
 echo %ESC%[32mFinished! %ESC%[0m
+timeout /t 3 >nul
 echo.
-
+set ENDTIME=%TIME%
+for /F "tokens=1-4 delims=:.," %%a in ("%ENDTIME%") do ( 
+    IF %ENDTIME% GTR %STARTTIME% set /A "end=(((%%a*60)+1%%b %% 100)*60+1%%c %% 100)*100+1%%d %% 100" 
+    IF %ENDTIME% LSS %STARTTIME% set /A "end=((((%%a+24)*60)+1%%b %% 100)*60+1%%c %% 100)*100+1%%d %% 100" 
+)
+set /A elapsed=end-start
+set /A hh=elapsed/(60*60*100), rest=elapsed%%(60*60*100), mm=rest/(60*100)
+if %mm% lss %runningmin% goto loop3
 
 @REM cleanup and exit
 echo %ESC%[33mFinalizing and exporting results... %ESC%[0m
