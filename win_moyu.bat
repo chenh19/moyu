@@ -1,9 +1,5 @@
 @ECHO OFF
 
-@REM pause function
-echo ms = WScript.Arguments(0) >> %HOMEPATH%\SLEEP.VBS
-echo WScript.Sleep ms >> %HOMEPATH%\SLEEP.VBS
-
 @REM set cmd font color
 for /F %%a in ('echo prompt $E ^| cmd') do set "ESC=%%a"
 echo.
@@ -24,6 +20,10 @@ echo.
    echo %runningmin%| findstr /r "^[1-9][0-9]*$">nul
 if errorlevel 1 goto loop2
 echo.
+
+@REM pause function
+echo ms = WScript.Arguments(0) >> %HOMEPATH%\SLEEP.VBS
+echo WScript.Sleep ms >> %HOMEPATH%\SLEEP.VBS
 
 @REM run
 set STARTTIME=%TIME%
