@@ -4,7 +4,7 @@
 echo ms = WScript.Arguments(0) >> %HOMEPATH%\SLEEP.VBS
 echo WScript.Sleep ms >> %HOMEPATH%\SLEEP.VBS
 
-@REM set cmd font colors
+@REM set cmd font color
 for /F %%a in ('echo prompt $E ^| cmd') do set "ESC=%%a"
 echo.
 
