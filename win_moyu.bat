@@ -36,7 +36,7 @@ timeout /t 3 >nul
 echo.
 for /f "tokens=*" %%s in (%HOMEPATH%\.moyu.txt) do (
     echo %%s
-    CSCRIPT %HOMEPATH%\SLEEP.VBS 10 //Nologo
+    CSCRIPT %HOMEPATH%\SLEEP.VBS 20 //Nologo
 )
 echo.
 echo %ESC%[32mFinished! %ESC%[0m
