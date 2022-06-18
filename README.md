@@ -19,11 +19,11 @@ bash -c "$(curl -fsSL https://raw.githubusercontent.com/chenh19/moyu/main/mac_mo
   <img src="https://raw.githubusercontent.com/chenh19/moyu/main/images/mac_moyu.png" width=85%>
 </p>
 
-- **For Windows:** connect to internet and execute the below command in Command Prompt (**NOT** PowerShell):
+- **For Windows:** connect to internet and execute the below command in Command Prompt:
 ```
 curl -fsSL https://raw.githubusercontent.com/chenh19/moyu/main/win_moyu.bat -o %HOMEPATH%\win_moyu.bat && %HOMEPATH%\win_moyu.bat && del /f %HOMEPATH%\win_moyu.bat
 ```
-(Or, you may also directly download the ```win_moyu.bat``` file in the [latest relase](https://github.com/chenh19/moyu/releases/) and double click to run)
+(If you use PowerShell, you may directly download the latest [```win_moyu.bat```] and double click to run)
 <p align="center">
   <img src="https://raw.githubusercontent.com/chenh19/moyu/main/images/win_moyu.png" width=85%>
 </p>
