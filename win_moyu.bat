@@ -42,6 +42,7 @@ echo.
 echo %ESC%[32mFinished! %ESC%[0m
 timeout /t 3 >nul
 echo.
+echo.
 set ENDTIME=%TIME%
 for /F "tokens=1-4 delims=:.," %%a in ("%ENDTIME%") do ( 
     IF %ENDTIME% GTR %STARTTIME% set /A "end=(((%%a*60)+1%%b %% 100)*60+1%%c %% 100)*100+1%%d %% 100" 
@@ -55,7 +56,8 @@ if %mm% lss %runningmin% goto loop3
 echo %ESC%[33mFinalizing and exporting results... %ESC%[0m
 timeout /t 15 >nul
 echo.
-echo %ESC%[32mAll done! %ESC%[0m
-CSCRIPT %HOMEPATH%\SLEEP.VBS 300 //Nologo
 echo.
+echo %ESC%[32mAll done! %ESC%[0m
+echo.
+CSCRIPT %HOMEPATH%\SLEEP.VBS 300 //Nologo
 del /f %HOMEPATH%\.moyu.txt %HOMEPATH%\SLEEP.VBS
