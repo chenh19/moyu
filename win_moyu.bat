@@ -10,6 +10,7 @@ echo.
    set /p scripturl=""
    echo %scripturl%| findstr /r "https://raw.githubusercontent.com/">nul
 if errorlevel 1 goto loop1
+echo.
 curl %scripturl% -o %HOMEPATH%\.moyu.txt
 echo.
 
