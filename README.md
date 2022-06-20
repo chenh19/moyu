@@ -34,5 +34,5 @@ curl -fsSL https://raw.githubusercontent.com/chenh19/moyu/main/win_moyu.bat -o %
 - If you would like to stop moyu immediately, simply press ```Ctrl+C```
 
 ### Known issues:
-- It currently does not work in PowerShell with the one-line ```curl``` command on Windows, likely because PowerShell uses ```$env:HOMEPATH``` instead of ```%HOMEPATH%``` (```$env:HOMEPATH``` does not contain ```C:\```, either)
+- It currently does not work in PowerShell with the one-line ```curl``` command on Windows, likely because PowerShell uses ```$env:HOMEPATH``` instead of [```%HOMEPATH%```](https://github.com/chenh19/moyu/blob/c085db1541002ba3abe921518f30b826635a9d5c/win_moyu.bat#L14) (```$env:HOMEPATH``` does not contain ```C:\```, either)
 - It currently downloads but does not echo on CentOS 7 (thanks for reporting by Irene), likely because of [line 28](https://github.com/chenh19/moyu/blob/b8cc644f170d18c04f3692b476e40b9c87414176/linux_moyu.sh#L28)
