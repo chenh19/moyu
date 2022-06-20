@@ -32,4 +32,7 @@ curl -fsSL https://raw.githubusercontent.com/chenh19/moyu/main/win_moyu.bat -o %
 - You will be asked to specify a raw script on GitHub to moyu, such as: ```https://raw.githubusercontent.com/chenh19/BRStudio/master/BRStudio.R```
 - You will also be asked to specify a time duration to moyu (minutes), such as: ```15```  
 - If you would like to stop moyu immediately, simply press ```Ctrl+C```
-- It currently does not work on CentOS 7 (thanks for reporting by Irene)
+
+### Known issues:
+- It currently does not work in PowerShell with the one-line ```curl``` command on Windows
+- It currently does not echo on CentOS 7 (thanks for reporting by Irene), likely because of [line 28](https://github.com/chenh19/moyu/blob/b8cc644f170d18c04f3692b476e40b9c87414176/linux_moyu.sh#L28)
