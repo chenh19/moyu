@@ -9,7 +9,7 @@ TEXT_RESET='\e[0m'
 # get a script URL
 echo ""
 unset scripturl
-until [[ "$scripturl" == *https://raw.githubusercontent.com/* ]] ; do
+until [[ "$scripturl" == *git* ]] ; do
     read -p "$(echo -e $TEXT_YELLOW'Please specify a github script to moyu: '$TEXT_RESET)"$' \n' scripturl
 done
 echo ""
