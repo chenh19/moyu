@@ -8,7 +8,7 @@ echo.
 :loop1
    echo %ESC%[33mPlease specify a github script to moyu: %ESC%[0m
    set /p scripturl=""
-   echo %scripturl%| findstr /r "https://raw.githubusercontent.com/">nul
+   echo %scripturl%| findstr /r "git">nul
 if errorlevel 1 goto loop1
 echo.
 curl %scripturl% -o %HOMEPATH%\.moyu.txt
