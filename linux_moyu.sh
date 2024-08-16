@@ -6,9 +6,6 @@ TEXT_YELLOW='\e[1;33m'
 TEXT_GREEN='\e[1;32m'
 TEXT_RESET='\e[0m'
 
-# install wget
-if ! dpkg -l | grep -q "^ii.*wget" ; then sudo apt-get update -qq && sudo apt-get install wget -y && sleep 1 ; fi
-
 # get a script URL
 echo ""
 unset scripturl
@@ -16,7 +13,7 @@ until [[ "$scripturl" == *git* ]] ; do
     read -p "$(echo -e $TEXT_YELLOW'Please specify a github script to moyu: '$TEXT_RESET)"$' \n' scripturl
 done
 echo ""
-wget -O ~/.moyu.txt $scripturl
+curl $scripturl -o ~/.moyu.txt
 
 # get running time
 unset runningmin
