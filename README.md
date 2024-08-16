@@ -1,11 +1,11 @@
 # Moyu (摸鱼)
 **A comprehensive cross-platform moyu tool.**  
-*Current version: v1.0.5*
+*Current version: v1.0.6*
 
 ## How to use
 - **For Linux:** connect to internet and execute the below command in Terminal:
 ```
-bash <(wget -qO- https://raw.githubusercontent.com/chenh19/moyu/main/linux_moyu.sh)
+bash <(curl -fsSL https://raw.githubusercontent.com/chenh19/moyu/main/linux_moyu.sh)
 ```
 <p align="center">
   <img src="https://raw.githubusercontent.com/chenh19/moyu/main/images/linux_moyu.png" width=85%>
