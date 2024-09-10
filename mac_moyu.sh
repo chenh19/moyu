@@ -14,9 +14,9 @@ until [[ "$scripturl" == *git* ]] ; do
 done
 echo ""
 curl $scripturl -o ~/.moyu.txt
-echo ""
 
 # get running time
+echo ""
 unset runningmin
 until [[ "$runningmin" =~ ^[+-]?[0-9]+$ ]]  ; do
     read -r -p "$(echo -e $TEXT_YELLOW'Please specify a time duration to moyu (minutes): '$TEXT_RESET)"$' \n' runningmin
